@@ -282,9 +282,6 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
 .region-card:hover { transform: translateY(-3px); border-color: var(--line-strong); background: var(--surface-2); }
 .region-card .reg { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; font-size: 1.02rem; color: var(--text); }
 .region-card .fed { color: var(--muted-2); font-size: .8rem; margin-top: 4px; line-height: 1.45; }
-.region-card .pres { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: .88rem; }
-.region-card .pres span { color: var(--muted-2); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 2px; }
-.region-card .pres b { font-weight: 600; color: var(--text); }
 
 /* =========================================================== EVENTS */
 .events-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; }
