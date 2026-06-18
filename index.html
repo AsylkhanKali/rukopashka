@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Всеказахстанская ассоциация рукопашного боя</title>
+  <meta name="description" content="Официальный сайт Всеказахстанской ассоциации рукопашного боя — национальной спортивной федерации Казахстана. Сборная, региональные федерации, соревнования, руководство и контакты." />
+  <meta name="theme-color" content="#0b0e13" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Всеказахстанская ассоциация рукопашного боя" />
+  <meta property="og:description" content="Национальная спортивная федерация рукопашного боя Республики Казахстан." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+  <!-- Fonts (Oswald + Manrope, с кириллическим расширением для казахского) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n data-ru="К содержанию" data-kz="Мазмұнға өту">К содержанию</a>
+
+  <!-- ===================================================== TOPBAR -->
+  <header class="topbar" id="topbar">
+    <div class="container">
+      <a class="brand" href="#hero" aria-label="Всеказахстанская ассоциация рукопашного боя">
+        <img src="assets/img/logo.png" alt="Эмблема Всеказахстанской ассоциации рукопашного боя" />
+        <span class="brand-text">
+          <b>AKHFA</b>
+          <span data-i18n data-ru="Ассоциация рукопашного боя" data-kz="Жекпе-жек қауымдастығы">Ассоциация рукопашного боя</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Основная навигация">
+        <a href="#about"    data-i18n data-ru="Об ассоциации" data-kz="Қауымдастық туралы">Об ассоциации</a>
+        <a href="#leaders"  data-i18n data-ru="Руководство" data-kz="Басшылық">Руководство</a>
+        <a href="#regions"  data-i18n data-ru="Федерации" data-kz="Федерациялар">Федерации</a>
+        <a href="#events"   data-i18n data-ru="События" data-kz="Іс-шаралар">События</a>
+        <a href="#partners" data-i18n data-ru="Партнёры" data-kz="Серіктестер">Партнёры</a>
+        <a href="#contact"  data-i18n data-ru="Контакты" data-kz="Байланыс">Контакты</a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Язык / Тіл">
+        <button type="button" data-lang="ru" aria-pressed="false">РУС</button>
+        <button type="button" data-lang="kz" aria-pressed="true">ҚАЗ</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ==================================================== HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/img/hero.jpg" alt="Казахстанский спортсмен с национальным флагом после победы на международном турнире по рукопашному бою" fetchpriority="high" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="kicker" data-i18n data-ru="Национальная спортивная федерация рукопашного боя" data-kz="Жекпе-жек сайысының ұлттық спорттық федерациясы">Национальная спортивная федерация рукопашного боя</p>
+          <h1>
+            <span data-i18n data-ru="Всеказахстанская ассоциация" data-kz="Бүкілқазақстандық">Всеказахстанская ассоциация</span>
+            <span class="accent" data-i18n data-ru="рукопашного боя" data-kz="жекпе-жек сайыс қауымдастығы">рукопашного боя</span>
+          </h1>
+          <p class="hero-sub" data-i18n
+             data-ru="Развиваем рукопашный бой в Казахстане с 2014 года: национальная сборная, 15 региональных федераций и признание на международной арене."
+             data-kz="2014 жылдан бері Қазақстанда жекпе-жек сайысын дамытамыз: ұлттық құрама, 15 аймақтық федерация және халықаралық деңгейдегі мойындау.">
+             Развиваем рукопашный бой в Казахстане с 2014 года: национальная сборная, 15 региональных федераций и признание на международной арене.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#about" data-i18n data-ru="Об ассоциации" data-kz="Қауымдастық туралы">Об ассоциации</a>
+            <a class="btn btn-ghost" href="#contact"><span data-i18n data-ru="Связаться" data-kz="Байланысу">Связаться</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="flag-bar" aria-hidden="true"><i></i><i></i></span>
+          <p class="kicker" data-i18n data-ru="Об ассоциации" data-kz="Қауымдастық туралы">Об ассоциации</p>
+          <h2 data-i18n data-ru="Национальная федерация рукопашного боя" data-kz="Жекпе-жек сайысының ұлттық федерациясы">Национальная федерация рукопашного боя</h2>
+          <p class="lead" data-i18n
+             data-ru="Объединяем регионы страны вокруг одного вида спорта, готовим сборную и поднимаем флаг Казахстана на международных стартах."
+             data-kz="Елдің аймақтарын бір спорт түрінің төңірегінде біріктіреміз, құраманы дайындап, халықаралық додаларда Қазақстан туын көтереміз.">
+             Объединяем регионы страны вокруг одного вида спорта, готовим сборную и поднимаем флаг Казахстана на международных стартах.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal" data-d="1">
+            <p data-i18n
+               data-ru="Объединение юридических лиц в форме союза «Всеказахстанская Ассоциация рукопашного боя» — национальная спортивная федерация, развивающая рукопашный бой во всех регионах Казахстана. Ассоциация зарегистрирована 21 октября 2014 года и объединяет аккредитованные областные и городские федерации."
+               data-kz="«Бүкілқазақстандық жекпе-жек сайыс Қауымдастығы» одағы — Қазақстанның барлық аймағында жекпе-жек сайысын дамытатын ұлттық спорттық федерация. Қауымдастық 2014 жылы 21 қазанда тіркелген және аккредиттелген облыстық әрі қалалық федерацияларды біріктіреді.">
+               Объединение юридических лиц в форме союза «Всеказахстанская Ассоциация рукопашного боя» — национальная спортивная федерация, развивающая рукопашный бой во всех регионах Казахстана. Ассоциация зарегистрирована 21 октября 2014 года и объединяет аккредитованные областные и городские федерации.
+            </p>
+            <p data-i18n
+               data-ru="С 2015 года Ассоциация входит в международную федерацию рукопашного боя HSIF. Это обеспечивает участие казахстанских спортсменов в международных соревнованиях и турнирах."
+               data-kz="2015 жылдан бастап Қауымдастық халықаралық жекпе-жек федерациясы HSIF құрамына кіреді. Бұл қазақстандық спортшылардың халықаралық жарыстар мен турнирлерге қатысуын қамтамасыз етеді.">
+               С 2015 года Ассоциация входит в международную федерацию рукопашного боя HSIF. Это обеспечивает участие казахстанских спортсменов в международных соревнованиях и турнирах.
+            </p>
+            <p data-i18n
+               data-ru="Наша цель — массовое развитие вида спорта, подготовка национальной сборной и воспитание характера: дисциплины, выносливости и уважения."
+               data-kz="Біздің мақсат — спорт түрін бұқаралық деңгейде дамыту, ұлттық құраманы дайындау және мінез тәрбиелеу: тәртіп, төзімділік пен құрмет.">
+               Наша цель — массовое развитие вида спорта, подготовка национальной сборной и воспитание характера: дисциплины, выносливости и уважения.
+            </p>
+          </div>
+
+          <div class="media-stack reveal" data-d="2">
+            <figure class="tall"><img src="assets/img/about-training.jpg" alt="Совместная тренировка спортсменов под эмблемой Ассоциации рукопашного боя" loading="lazy" /></figure>
+            <figure><img src="assets/img/about-team.jpg" alt="Национальная сборная Казахстана по рукопашному бою с медалями" loading="lazy" /></figure>
+            <figure><img src="assets/img/champion-podium.jpg" alt="Казахстанский чемпион на пьедестале с национальным флагом" loading="lazy" /></figure>
+          </div>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><b data-count="15">15</b><span data-i18n data-ru="Региональных федераций" data-kz="Аймақтық федерация">Региональных федераций</span></div>
+          <div class="stat"><b>2014</b><span data-i18n data-ru="Год основания" data-kz="Құрылған жыл">Год основания</span></div>
+          <div class="stat"><b data-count="11">11</b><span data-i18n data-ru="Штатных специалистов" data-kz="Штаттық мамандар">Штатных специалистов</span></div>
+          <div class="stat"><b>HSIF</b><span data-i18n data-ru="Член международной федерации с 2015" data-kz="Халықаралық федерация мүшесі (2015)">Член международной федерации с 2015</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================== LEADERSHIP -->
+    <section class="section section--alt section--line" id="leaders">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="flag-bar" aria-hidden="true"><i></i><i></i></span>
+          <h2 data-i18n data-ru="Руководство ассоциации" data-kz="Қауымдастық басшылығы">Руководство ассоциации</h2>
+          <p class="lead" data-i18n
+             data-ru="Президиум, исполнительный и контрольный органы управления."
+             data-kz="Президиум, атқарушы және бақылау басқару органдары.">
+             Президиум, исполнительный и контрольный органы управления.
+          </p>
+        </div>
+
+        <div class="leader-feature reveal">
+          <div class="avatar lg" aria-hidden="true">СА</div>
+          <div>
+            <p class="role" data-i18n data-ru="Президент Ассоциации" data-kz="Қауымдастық президенті">Президент Ассоциации</p>
+            <h3>Сейдалин Азат Алибекович</h3>
+            <p data-i18n
+               data-ru="Избран Президентом Ассоциации 26 сентября 2025 года. Определяет стратегию развития вида спорта и руководит работой национальной федерации."
+               data-kz="2025 жылғы 26 қыркүйекте Қауымдастық президенті болып сайланды. Спорт түрін дамыту стратегиясын айқындап, ұлттық федерацияның жұмысын басқарады.">
+               Избран Президентом Ассоциации 26 сентября 2025 года. Определяет стратегию развития вида спорта и руководит работой национальной федерации.
+            </p>
+          </div>
+        </div>
+
+        <div class="leader-grid">
+          <article class="leader-card reveal" data-d="1">
+            <div class="avatar sm" aria-hidden="true">АА</div>
+            <p class="role" data-i18n data-ru="Вице-президент" data-kz="Вице-президент">Вице-президент</p>
+            <h4>Аманбаев Антон Асанович</h4>
+          </article>
+          <article class="leader-card reveal" data-d="1">
+            <div class="avatar sm" aria-hidden="true">КА</div>
+            <p class="role" data-i18n data-ru="Генеральный секретарь" data-kz="Бас хатшы">Генеральный секретарь</p>
+            <h4>Кайрбаев Адиль Токтарханович</h4>
+          </article>
+          <article class="leader-card reveal" data-d="2">
+            <div class="avatar sm" aria-hidden="true">СА</div>
+            <p class="role" data-i18n data-ru="Главный тренер" data-kz="Бас бапкер">Главный тренер</p>
+            <h4>Сагалбаев Арман Салимжанович</h4>
+          </article>
+          <article class="leader-card reveal" data-d="2">
+            <div class="avatar sm" aria-hidden="true">АР</div>
+            <p class="role" data-i18n data-ru="Председатель судейской коллегии" data-kz="Төрешілер алқасының төрағасы">Председатель судейской коллегии</p>
+            <h4>Абикешов Ринат Гибратович</h4>
+          </article>
+        </div>
+
+        <div class="gov-wrap">
+          <div class="gov reveal">
+            <h3 data-i18n data-ru="Органы управления" data-kz="Басқару органдары">Органы управления</h3>
+            <div class="gov-item">
+              <div class="t" data-i18n data-ru="Высший орган — Конференция" data-kz="Жоғары орган — Конференция">Высший орган — Конференция</div>
+              <div class="d" data-i18n data-ru="Общее собрание членов Ассоциации: аккредитованные областные и городские федерации." data-kz="Қауымдастық мүшелерінің жалпы жиналысы: аккредиттелген облыстық және қалалық федерациялар.">Общее собрание членов Ассоциации: аккредитованные областные и городские федерации.</div>
+            </div>
+            <div class="gov-item">
+              <div class="t" data-i18n data-ru="Исполнительный орган — Президиум" data-kz="Атқарушы орган — Президиум">Исполнительный орган — Президиум</div>
+              <div class="d" data-i18n data-ru="Президент, вице-президент, генеральный секретарь, председатель судейской коллегии и главный тренер." data-kz="Президент, вице-президент, бас хатшы, төрешілер алқасының төрағасы және бас бапкер.">Президент, вице-президент, генеральный секретарь, председатель судейской коллегии и главный тренер.</div>
+            </div>
+            <div class="gov-item">
+              <div class="t" data-i18n data-ru="Контрольно-ревизионная комиссия" data-kz="Бақылау-тексеру комиссиясы">Контрольно-ревизионная комиссия</div>
+              <div class="d" data-i18n data-ru="Контроль финансовой и уставной деятельности Ассоциации." data-kz="Қауымдастықтың қаржылық және жарғылық қызметін бақылау.">Контроль финансовой и уставной деятельности Ассоциации.</div>
+            </div>
+            <div class="gov-item">
+              <div class="t" data-i18n data-ru="Аппарат Ассоциации" data-kz="Қауымдастық аппараты">Аппарат Ассоциации</div>
+              <div class="d" data-i18n data-ru="Юрист-казначей — Бекболатов Асхат Жаныбекович. Бухгалтер — Кенжегарина Б. Старший тренер — Сагитов Руслан Николаевич." data-kz="Заңгер-қазынашы — Бекболатов Асхат Жаныбекович. Бухгалтер — Кенжегарина Б. Аға бапкер — Сагитов Руслан Николаевич.">Юрист-казначей — Бекболатов Асхат Жаныбекович. Бухгалтер — Кенжегарина Б. Старший тренер — Сагитов Руслан Николаевич.</div>
+            </div>
+          </div>
+
+          <div class="recog reveal" data-d="1">
+            <h3 data-i18n data-ru="Международное признание" data-kz="Халықаралық мойындау">Международное признание</h3>
+            <div class="person">
+              <div class="avatar sm" aria-hidden="true">АР</div>
+              <div>
+                <div class="nm">Абикешов Ринат Гибратович</div>
+                <div class="rl" data-i18n data-ru="Судья международного уровня (HSIF)" data-kz="Халықаралық дәрежедегі төреші (HSIF)">Судья международного уровня (HSIF)</div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="avatar sm" aria-hidden="true">КД</div>
+              <div>
+                <div class="nm">Койшыбек Данияр Думанович</div>
+                <div class="rl" data-i18n data-ru="Тренер международного уровня (HSIF)" data-kz="Халықаралық дәрежедегі бапкер (HSIF)">Тренер международного уровня (HSIF)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================= REGIONS -->
+    <section class="section" id="regions">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="flag-bar" aria-hidden="true"><i></i><i></i></span>
+          <h2 data-i18n data-ru="Региональные федерации" data-kz="Аймақтық федерациялар">Региональные федерации</h2>
+          <p class="lead" data-i18n
+             data-ru="Аккредитованные областные и городские федерации в составе Ассоциации."
+             data-kz="Қауымдастық құрамындағы аккредиттелген облыстық және қалалық федерациялар.">
+             Аккредитованные областные и городские федерации в составе Ассоциации.
+          </p>
+        </div>
+
+        <div class="regions-grid" id="regionsGrid">
+          <!-- 15 региональных федераций -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================== EVENTS -->
+    <section class="section section--alt section--line" id="events">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="flag-bar" aria-hidden="true"><i></i><i></i></span>
+          <p class="kicker" data-i18n data-ru="События" data-kz="Іс-шаралар">События</p>
+          <h2 data-i18n data-ru="Соревнования и турниры" data-kz="Жарыстар мен турнирлер">Соревнования и турниры</h2>
+          <p class="lead" data-i18n
+             data-ru="От республиканских чемпионатов до международных стартов под эгидой HSIF."
+             data-kz="Республикалық чемпионаттардан бастап HSIF аясындағы халықаралық додаларға дейін.">
+             От республиканских чемпионатов до международных стартов под эгидой HSIF.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          <article class="event event--feature reveal">
+            <img src="assets/img/event-championship.jpg" alt="Пьедестал чемпионата Республики Казахстан по рукопашному бою «Ұлы дала батырлары»" loading="lazy" />
+            <div class="body">
+              <span class="tag" data-i18n data-ru="Чемпионат РК" data-kz="ҚР чемпионаты">Чемпионат РК</span>
+              <h3>«Ұлы дала батырлары»</h3>
+              <p data-i18n
+                 data-ru="Чемпионат Республики Казахстан по рукопашному бою. Главный национальный старт сезона: лучшие спортсмены страны и отбор в сборную."
+                 data-kz="Жекпе-жек сайысынан Қазақстан Республикасының чемпионаты. Маусымның басты ұлттық доласы: елдің үздік спортшылары және құрамаға іріктеу.">
+                 Чемпионат Республики Казахстан по рукопашному бою. Главный национальный старт сезона: лучшие спортсмены страны и отбор в сборную.
+              </p>
+              <div class="meta">
+                <span><i class="ph ph-map-pin" aria-hidden="true"></i> <span data-i18n data-ru="г. Уральск · Jaiyq Arena" data-kz="Орал қ. · Jaiyq Arena">г. Уральск · Jaiyq Arena</span></span>
+                <span><i class="ph ph-calendar-blank" aria-hidden="true"></i> 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="event-col">
+            <article class="event reveal" data-d="1">
+              <img src="assets/img/event-worldcup.jpg" alt="Этап Кубка мира по рукопашному бою «Кубок Дружбы 2026» в Москве" loading="lazy" />
+              <div class="body">
+                <span class="tag" data-i18n data-ru="Международные" data-kz="Халықаралық">Международные</span>
+                <h3 data-i18n data-ru="«Кубок Дружбы 2026»" data-kz="«Достық кубогы 2026»">«Кубок Дружбы 2026»</h3>
+                <div class="meta">
+                  <span><i class="ph ph-globe-hemisphere-east" aria-hidden="true"></i> <span data-i18n data-ru="г. Москва · этап Кубка мира" data-kz="Мәскеу қ. · Әлем кубогы кезеңі">г. Москва · этап Кубка мира</span></span>
+                </div>
+              </div>
+            </article>
+            <article class="event reveal" data-d="2">
+              <img src="assets/img/event-trophies.jpg" alt="Награждение победителей республиканских соревнований по рукопашному бою" loading="lazy" />
+              <div class="body">
+                <span class="tag" data-i18n data-ru="Республиканские" data-kz="Республикалық">Республиканские</span>
+                <h3 data-i18n data-ru="Кубки и турниры" data-kz="Кубоктар мен турнирлер">Кубки и турниры</h3>
+                <div class="meta">
+                  <span><i class="ph ph-trophy" aria-hidden="true"></i> <span data-i18n data-ru="Республика Казахстан" data-kz="Қазақстан Республикасы">Республика Казахстан</span></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="events-cta reveal">
+          <p><b data-i18n data-ru="Календарь соревнований" data-kz="Жарыс күнтізбесі">Календарь соревнований</b><br />
+            <span data-i18n data-ru="Анонсы, результаты и фотографии турниров публикуются в Instagram." data-kz="Турнирлердің хабарландырулары, нәтижелері мен суреттері Instagram-да жарияланады.">Анонсы, результаты и фотографии турниров публикуются в Instagram.</span></p>
+          <a class="btn btn-primary" href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener">
+            <i class="ph ph-instagram-logo" aria-hidden="true"></i> <span data-i18n data-ru="Открыть Instagram" data-kz="Instagram-ды ашу">Открыть Instagram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ PARTNERS -->
+    <section class="section" id="partners">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center; margin-inline:auto;">
+          <span class="flag-bar" aria-hidden="true" style="justify-content:center;"><i></i><i></i></span>
+          <h2 data-i18n data-ru="Партнёры и спонсоры" data-kz="Серіктестер мен демеушілер">Партнёры и спонсоры</h2>
+          <p class="lead" style="margin-inline:auto;" data-i18n
+             data-ru="Развитие вида спорта поддерживают государственные институты и партнёры."
+             data-kz="Спорт түрін дамытуды мемлекеттік институттар мен серіктестер қолдайды.">
+             Развитие вида спорта поддерживают государственные институты и партнёры.
+          </p>
+        </div>
+
+        <div class="partner-group reveal">
+          <h3 data-i18n data-ru="Генеральные спонсоры" data-kz="Бас демеушілер">Генеральные спонсоры</h3>
+          <div class="partners">
+            <div class="partner-card">
+              <div class="partner-mark partner-mark--logo"><img src="assets/img/sponsor-noc.png" alt="Логотип Национального Олимпийского комитета РК" loading="lazy" /></div>
+              <div>
+                <div class="nm" data-i18n data-ru="Национальный Олимпийский комитет РК" data-kz="ҚР Ұлттық Олимпиада комитеті">Национальный Олимпийский комитет РК</div>
+                <div class="sub" data-i18n data-ru="Поддержка национальной сборной" data-kz="Ұлттық құраманы қолдау">Поддержка национальной сборной</div>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-mark partner-mark--logo"><img src="assets/img/sponsor-kazzinc.png" alt="Логотип ТОО «Казцинк»" loading="lazy" /></div>
+              <div>
+                <div class="nm">ТОО «Казцинк»</div>
+                <div class="sub" data-i18n data-ru="Генеральный партнёр соревнований" data-kz="Жарыстардың бас серіктесі">Генеральный партнёр соревнований</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-group reveal" data-d="1">
+          <h3 data-i18n data-ru="Международный партнёр" data-kz="Халықаралық серіктес">Международный партнёр</h3>
+          <div class="partners">
+            <div class="partner-card">
+              <div class="partner-mark" aria-hidden="true">H</div>
+              <div>
+                <div class="nm" data-i18n data-ru="Международная федерация рукопашного боя (HSIF)" data-kz="Халықаралық жекпе-жек федерациясы (HSIF)">Международная федерация рукопашного боя (HSIF)</div>
+                <div class="sub"><a href="https://www.hsif.world/" target="_blank" rel="noopener">hsif.world</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================= CONTACT -->
+    <section class="section section--alt section--line" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="flag-bar" aria-hidden="true"><i></i><i></i></span>
+          <h2 data-i18n data-ru="Контакты" data-kz="Байланыс">Контакты</h2>
+          <p class="lead" data-i18n
+             data-ru="Свяжитесь с Ассоциацией по вопросам соревнований, аккредитации и партнёрства."
+             data-kz="Жарыстар, аккредитация және серіктестік мәселелері бойынша Қауымдастықпен байланысыңыз.">
+             Свяжитесь с Ассоциацией по вопросам соревнований, аккредитации и партнёрства.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-list reveal">
+            <div class="req-card" style="margin-top:0;">
+              <div class="req-row"><span class="k" data-i18n data-ru="Адрес" data-kz="Мекенжай">Адрес</span><span class="v" data-i18n data-ru="Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Астана»)" data-kz="Қазақстан Республикасы, Астана қ., Сарыарқа ауданы, Сарыарқа даңғылы, 21 («Астана» СК)">Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Астана»)</span></div>
+              <div class="req-row"><span class="k" data-i18n data-ru="Телефон" data-kz="Телефон">Телефон</span><span class="v"><a href="tel:+77070177404">+7 707 017 7404</a></span></div>
+              <div class="req-row"><span class="k">Email</span><span class="v"><a href="mailto:all_kazakhstan_h2h@mail.ru">all_kazakhstan_h2h@mail.ru</a></span></div>
+              <div class="req-row"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener">@all_kazakhstan_h2h</a></span></div>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="tel:+77070177404"><i class="ph ph-phone" aria-hidden="true"></i> <span data-i18n data-ru="Позвонить" data-kz="Қоңырау шалу">Позвонить</span></a>
+              <a class="btn btn-ghost" href="mailto:all_kazakhstan_h2h@mail.ru"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Email</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal" data-d="1">
+            <h3 data-i18n data-ru="Официальное наименование" data-kz="Ресми атауы">Официальное наименование</h3>
+            <p data-i18n data-ru="Полное официальное наименование на трёх языках." data-kz="Үш тілдегі толық ресми атауы.">Полное официальное наименование на трёх языках.</p>
+            <div class="full-names">
+              <div><span data-i18n data-ru="На казахском" data-kz="Қазақша">На казахском</span>«Бүкілқазақстандық жекпе-жек сайыс Қауымдастығы» одағы нысанындағы заңды тұлғалар бірлестігі</div>
+              <div><span data-i18n data-ru="На русском" data-kz="Орысша">На русском</span>Объединение юридических лиц в форме союза «Всеказахстанская Ассоциация рукопашного боя»</div>
+              <div><span data-i18n data-ru="На английском" data-kz="Ағылшынша">На английском</span>Union of Legal Entities «All-Kazakhstan hand-to-hand fighting Association»</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================== FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="#hero">
+        <img src="assets/img/logo.png" alt="Эмблема Ассоциации" />
+        <span class="brand-text">
+          <b>AKHFA</b>
+          <span data-i18n data-ru="Ассоциация рукопашного боя" data-kz="Жекпе-жек қауымдастығы">Ассоциация рукопашного боя</span>
+        </span>
+      </a>
+      <p class="copy" data-i18n
+         data-ru="© 2026 Всеказахстанская ассоциация рукопашного боя. Все права защищены."
+         data-kz="© 2026 Бүкілқазақстандық жекпе-жек сайыс қауымдастығы. Барлық құқықтар қорғалған.">
+         © 2026 Всеказахстанская ассоциация рукопашного боя. Все права защищены.
+      </p>
+      <div class="socials">
+        <a href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+        <a href="mailto:all_kazakhstan_h2h@mail.ru" aria-label="Email"><i class="ph ph-envelope-simple" aria-hidden="true"></i></a>
+        <a href="tel:+77070177404" aria-label="Телефон"><i class="ph ph-phone" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
