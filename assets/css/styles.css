@@ -223,7 +223,7 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
 .media-stack .tall img { aspect-ratio: auto; height: 100%; }
 
 /* stats strip */
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: clamp(40px, 6vw, 72px); background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: clamp(40px, 6vw, 72px); background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .stat { background: var(--bg-alt); padding: 30px 24px; text-align: center; }
 .stat b { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--gold-soft); display: block; line-height: 1; }
 .stat span { display: block; margin-top: 12px; color: var(--muted); font-size: .9rem; }
