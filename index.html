@@ -215,12 +215,10 @@
               <b>15</b>
             </div>
             <div class="kaz-map__canvas">
-              <svg class="kaz-map__shape" viewBox="0 0 900 480" role="img" aria-label="Схематичная карта Казахстана">
-                <path d="M102 213 L170 160 L263 167 L321 121 L404 133 L470 91 L564 112 L624 74 L714 116 L779 183 L851 205 L801 272 L825 335 L720 369 L629 355 L580 406 L487 371 L395 395 L322 345 L240 367 L174 318 L91 302 L54 253 Z" />
-                <path d="M170 160 L240 367 M321 121 L395 395 M470 91 L487 371 M624 74 L580 406 M714 116 L629 355" />
-              </svg>
+              <div class="kaz-map__shape" role="img" aria-label="Карта Казахстана"></div>
               <div class="map-markers" id="regionsMapMarkers"></div>
             </div>
+            <a class="kaz-map__credit" href="https://commons.wikimedia.org/wiki/File:Blank_map_of_Kazakhstan.svg" target="_blank" rel="noopener">map: Wikimedia Commons</a>
           </div>
           <div class="regions-summary">
             <span class="tag" data-i18n data-ru="География" data-kz="География">География</span>
@@ -299,117 +297,149 @@
 
         <div class="news-feed">
           <div class="news-head reveal">
-            <h3>Мероприятия и новости 2025</h3>
-            <p>Учебно-тренировочные сборы, международные старты и республиканские турниры Ассоциации.</p>
+            <h3 data-i18n data-ru="Мероприятия и новости" data-kz="Іс-шаралар мен жаңалықтар">Мероприятия и новости</h3>
+            <p data-i18n data-ru="Учебно-тренировочные сборы, международные старты и республиканские турниры Ассоциации." data-kz="Қауымдастықтың оқу-жаттығу жиындары, халықаралық жарыстары және республикалық турнирлері.">Учебно-тренировочные сборы, международные старты и республиканские турниры Ассоциации.</p>
           </div>
 
           <div class="news-list">
             <article class="news-card reveal">
               <div class="news-media photo-slider" data-slider>
                 <div class="photo-slider__track">
-                  <img src="images/punkt/punkt1-1.jpeg" alt="Учебно-тренировочный сбор в Щучинске" loading="lazy" />
-                  <img src="images/punkt/punkt1-2.jpeg" alt="Подготовка спортсменов на учебно-тренировочном сборе" loading="lazy" />
-                  <img src="images/punkt/punkt1-3.jpeg" alt="Участники учебно-тренировочного сбора" loading="lazy" />
+                  <figure class="news-photo" style="--photo:url('/images/punkt/punkt1-1.jpeg')"><img src="images/punkt/punkt1-1.jpeg" alt="Учебно-тренировочный сбор в Щучинске" loading="lazy" /></figure>
+                  <figure class="news-photo" style="--photo:url('/images/punkt/punkt1-2.jpeg')"><img src="images/punkt/punkt1-2.jpeg" alt="Подготовка спортсменов на учебно-тренировочном сборе" loading="lazy" /></figure>
+                  <figure class="news-photo" style="--photo:url('/images/punkt/punkt1-3.jpeg')"><img src="images/punkt/punkt1-3.jpeg" alt="Участники учебно-тренировочного сбора" loading="lazy" /></figure>
                 </div>
                 <button class="photo-slider__btn photo-slider__btn--prev" type="button" aria-label="Предыдущее фото"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
                 <button class="photo-slider__btn photo-slider__btn--next" type="button" aria-label="Следующее фото"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
                 <div class="photo-slider__dots" aria-hidden="true"></div>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">УТС</span>
-                <h3>Учебно-тренировочные сборы к этапам Кубка мира</h3>
-                <p>Проведены учебно-тренировочные сборы в рамках подготовки к 1 этапу Кубка мира в г. Щучинск, Акмолинская область (15-30.09.2025), а также к 2 этапу Кубка мира в г. Астана (01-07.10.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведены мероприятия.</p>
+                <span class="tag" data-i18n data-ru="УТС" data-kz="ОЖЖ">УТС</span>
+                <h3 data-i18n data-ru="Учебно-тренировочные сборы к этапам Кубка мира" data-kz="Әлем кубогы кезеңдеріне оқу-жаттығу жиындары">Учебно-тренировочные сборы к этапам Кубка мира</h3>
+                <p data-i18n data-ru="Проведены учебно-тренировочные сборы в рамках подготовки к 1 этапу Кубка мира в г. Щучинск, Акмолинская область (15-30.09.2025), а также к 2 этапу Кубка мира в г. Астана (01-07.10.2025)." data-kz="Әлем кубогының 1-кезеңіне дайындық аясында Ақмола облысы, Щучинск қаласында (15-30.09.2025), сондай-ақ Әлем кубогының 2-кезеңіне дайындық аясында Астана қаласында (01-07.10.2025) оқу-жаттығу жиындары өткізілді.">Проведены учебно-тренировочные сборы в рамках подготовки к 1 этапу Кубка мира в г. Щучинск, Акмолинская область (15-30.09.2025), а также к 2 этапу Кубка мира в г. Астана (01-07.10.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведены мероприятия." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шаралар өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведены мероприятия.</p>
               </div>
             </article>
 
             <article class="news-card reveal" data-d="1">
               <div class="news-media">
-                <img src="images/punkt/punkt3.jpg" alt="Финал Кубка мира по рукопашному бою в Астане" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt3.jpg')"><img src="images/punkt/punkt3.jpg" alt="Финал Кубка мира по рукопашному бою в Астане" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Кубок мира</span>
-                <h3>Финал Кубка мира</h3>
-                <p>В г. Астана прошел финал Кубка мира по рукопашному бою (07-08.10.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Кубок мира" data-kz="Әлем кубогы">Кубок мира</span>
+                <h3 data-i18n data-ru="Финал Кубка мира" data-kz="Әлем кубогының финалы">Финал Кубка мира</h3>
+                <p data-i18n data-ru="В г. Астана прошел финал Кубка мира по рукопашному бою (07-08.10.2025)." data-kz="Астана қаласында жекпе-жек сайысынан Әлем кубогының финалы өтті (07-08.10.2025).">В г. Астана прошел финал Кубка мира по рукопашному бою (07-08.10.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal" data-d="2">
               <div class="news-media">
-                <img src="images/punkt/punkt4.jpg" alt="Учебно-тренировочный сбор к открытому чемпионату Азии" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt4.jpg')"><img src="images/punkt/punkt4.jpg" alt="Учебно-тренировочный сбор к открытому чемпионату Азии" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">УТС</span>
-                <h3>Подготовка к Открытому чемпионату Азии</h3>
-                <p>Проведены учебно-тренировочные сборы к Открытому чемпионату Азии по рукопашному бою в дисциплине самооборона, Таиланд (01-14.11.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="УТС" data-kz="ОЖЖ">УТС</span>
+                <h3 data-i18n data-ru="Подготовка к Открытому чемпионату Азии" data-kz="Ашық Азия чемпионатына дайындық">Подготовка к Открытому чемпионату Азии</h3>
+                <p data-i18n data-ru="Проведены учебно-тренировочные сборы к Открытому чемпионату Азии по рукопашному бою в дисциплине самооборона, Таиланд (01-14.11.2025)." data-kz="Таиландта өтетін жекпе-жек сайысының өзін-өзі қорғау дисциплинасы бойынша Ашық Азия чемпионатына оқу-жаттығу жиындары өткізілді (01-14.11.2025).">Проведены учебно-тренировочные сборы к Открытому чемпионату Азии по рукопашному бою в дисциплине самооборона, Таиланд (01-14.11.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal">
               <div class="news-media">
-                <img src="images/punkt/punkt5.png" alt="Открытый Кубок Азии 2025 по рукопашному бою в Пхукете" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt5.png')"><img src="images/punkt/punkt5.png" alt="Открытый Кубок Азии 2025 по рукопашному бою в Пхукете" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Кубок Азии</span>
-                <h3>Открытый Кубок Азии 2025</h3>
-                <p>В г. Пхукет, Таиланд прошел Открытый Кубок Азии 2025 по рукопашному бою в дисциплине самооборона (14-15.11.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Кубок Азии" data-kz="Азия кубогы">Кубок Азии</span>
+                <h3 data-i18n data-ru="Открытый Кубок Азии" data-kz="Ашық Азия кубогы">Открытый Кубок Азии</h3>
+                <p data-i18n data-ru="В г. Пхукет, Таиланд прошел Открытый Кубок Азии 2025 по рукопашному бою в дисциплине самооборона (14-15.11.2025)." data-kz="Таиландтың Пхукет қаласында жекпе-жек сайысының өзін-өзі қорғау дисциплинасы бойынша 2025 жылғы Ашық Азия кубогы өтті (14-15.11.2025).">В г. Пхукет, Таиланд прошел Открытый Кубок Азии 2025 по рукопашному бою в дисциплине самооборона (14-15.11.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal" data-d="1">
               <div class="news-media">
-                <img src="images/punkt/punkt6.jpg" alt="Чемпионат мира по рукопашному бою 2025 в Москве" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt6.jpg')"><img src="images/punkt/punkt6.jpg" alt="Чемпионат мира по рукопашному бою 2025 в Москве" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Чемпионат мира</span>
-                <h3>Чемпионат мира 2025</h3>
-                <p>В г. Москва, Россия прошел Чемпионат мира по рукопашному бою 2025 в абсолютных весовых категориях среди мужчин и женщин (10-13.12.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Чемпионат мира" data-kz="Әлем чемпионаты">Чемпионат мира</span>
+                <h3 data-i18n data-ru="Чемпионат мира" data-kz="Әлем чемпионаты">Чемпионат мира</h3>
+                <p data-i18n data-ru="В г. Москва, Россия прошел Чемпионат мира по рукопашному бою 2025 в абсолютных весовых категориях среди мужчин и женщин (10-13.12.2025)." data-kz="Ресейдің Мәскеу қаласында ерлер мен әйелдер арасындағы абсолюттік салмақ дәрежелерінде жекпе-жек сайысынан 2025 жылғы Әлем чемпионаты өтті (10-13.12.2025).">В г. Москва, Россия прошел Чемпионат мира по рукопашному бою 2025 в абсолютных весовых категориях среди мужчин и женщин (10-13.12.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal" data-d="2">
               <div class="news-media photo-slider" data-slider>
                 <div class="photo-slider__track">
-                  <img src="images/punkt/punkt7-1.png" alt="Открытый республиканский турнир по рукопашному бою в Алматы" loading="lazy" />
-                  <img src="images/punkt/punkt7-2.jpg" alt="Участники открытого республиканского турнира" loading="lazy" />
+                  <figure class="news-photo" style="--photo:url('/images/punkt/punkt7-1.png')"><img src="images/punkt/punkt7-1.png" alt="Открытый республиканский турнир по рукопашному бою в Алматы" loading="lazy" /></figure>
+                  <figure class="news-photo" style="--photo:url('/images/punkt/punkt7-2.jpg')"><img src="images/punkt/punkt7-2.jpg" alt="Участники открытого республиканского турнира" loading="lazy" /></figure>
                 </div>
                 <button class="photo-slider__btn photo-slider__btn--prev" type="button" aria-label="Предыдущее фото"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
                 <button class="photo-slider__btn photo-slider__btn--next" type="button" aria-label="Следующее фото"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
                 <div class="photo-slider__dots" aria-hidden="true"></div>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Турнир</span>
-                <h3>Открытый республиканский турнир</h3>
-                <p>В г. Алматы прошел Открытый республиканский турнир по рукопашному бою среди детей, юношей Казахстана в возрастных категориях 12-13, 14-15, 16-17 лет и юниоров 18-23 лет (11-14.12.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Турнир" data-kz="Турнир">Турнир</span>
+                <h3 data-i18n data-ru="Открытый республиканский турнир" data-kz="Ашық республикалық турнир">Открытый республиканский турнир</h3>
+                <p data-i18n data-ru="В г. Алматы прошел Открытый республиканский турнир по рукопашному бою среди детей, юношей Казахстана в возрастных категориях 12-13, 14-15, 16-17 лет и юниоров 18-23 лет (11-14.12.2025)." data-kz="Алматы қаласында 12-13, 14-15, 16-17 жас санаттарындағы балалар мен жасөспірімдер, сондай-ақ 18-23 жас аралығындағы юниорлар арасында жекпе-жек сайысынан Ашық республикалық турнир өтті (11-14.12.2025).">В г. Алматы прошел Открытый республиканский турнир по рукопашному бою среди детей, юношей Казахстана в возрастных категориях 12-13, 14-15, 16-17 лет и юниоров 18-23 лет (11-14.12.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal">
               <div class="news-media">
-                <img src="images/punkt/punkt8.png" alt="Кубок КНБ и IV Кубок Агентства по противодействию коррупции" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt8.png')"><img src="images/punkt/punkt8.png" alt="Кубок КНБ и IV Кубок Агентства по противодействию коррупции" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Кубок</span>
-                <h3>Кубок КНБ и IV Кубок Агентства</h3>
-                <p>Проведен Кубок КНБ и Қазақстан Республикасының сыбайлас жемқорлыққа қарсы іс-қимыл агенттігінің IV кубогі (22-24.12.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Кубок" data-kz="Кубок">Кубок</span>
+                <h3 data-i18n data-ru="Кубок КНБ и IV Кубок Агентства" data-kz="ҰҚК кубогы және Агенттіктің IV кубогы">Кубок КНБ и IV Кубок Агентства</h3>
+                <p data-i18n data-ru="Проведен Кубок КНБ и Қазақстан Республикасының сыбайлас жемқорлыққа қарсы іс-қимыл агенттігінің IV кубогі (22-24.12.2025)." data-kz="ҰҚК кубогы және Қазақстан Республикасының сыбайлас жемқорлыққа қарсы іс-қимыл агенттігінің IV кубогі өткізілді (22-24.12.2025).">Проведен Кубок КНБ и Қазақстан Республикасының сыбайлас жемқорлыққа қарсы іс-қимыл агенттігінің IV кубогі (22-24.12.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
 
             <article class="news-card reveal" data-d="1">
               <div class="news-media">
-                <img src="images/punkt/punkt9.jpg" alt="Подведение итогов 2025 года" loading="lazy" />
+                <figure class="news-photo" style="--photo:url('/images/punkt/punkt9.jpg')"><img src="images/punkt/punkt9.jpg" alt="Подведение итогов 2025 года" loading="lazy" /></figure>
+                <div class="news-sponsors" aria-label="Спонсоры мероприятия">
+                  <img src="assets/img/sponsor-noc.png" alt="Национальный Олимпийский Комитет" loading="lazy" />
+                  <img src="assets/img/sponsor-kazzinc.png" alt="Казцинк" loading="lazy" />
+                </div>
               </div>
               <div class="news-body">
-                <span class="tag">Итоги</span>
-                <h3>Подведение итогов 2025 года</h3>
-                <p>Проведено подведение итогов 2025 года (22-23.12.2025).</p>
-                <p class="sponsor-note">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
+                <span class="tag" data-i18n data-ru="Итоги" data-kz="Қорытынды">Итоги</span>
+                <h3 data-i18n data-ru="Подведение итогов года" data-kz="Жыл қорытындысын шығару">Подведение итогов года</h3>
+                <p data-i18n data-ru="Проведено подведение итогов 2025 года (22-23.12.2025)." data-kz="2025 жылдың қорытындысы шығарылды (22-23.12.2025).">Проведено подведение итогов 2025 года (22-23.12.2025).</p>
+                <p class="sponsor-note" data-i18n data-ru="Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие." data-kz="Ұлттық Олимпиадалық комитет пен «Қазмырыш» ЖШС демеушілік көмегінің арқасында іс-шара өткізілді.">Благодаря спонсорской помощи Национального Олимпийского Комитета и ТОО «Казцинк» проведено мероприятие.</p>
               </div>
             </article>
           </div>
@@ -417,10 +447,7 @@
 
         <div class="events-cta reveal">
           <p><b data-i18n data-ru="Календарь соревнований" data-kz="Жарыс күнтізбесі">Календарь соревнований</b><br />
-            <span data-i18n data-ru="Анонсы, результаты и фотографии турниров публикуются в Instagram." data-kz="Турнирлердің хабарландырулары, нәтижелері мен суреттері Instagram-да жарияланады.">Анонсы, результаты и фотографии турниров публикуются в Instagram.</span></p>
-          <a class="btn btn-primary" href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener">
-            <i class="ph ph-instagram-logo" aria-hidden="true"></i> <span data-i18n data-ru="Открыть Instagram" data-kz="Instagram-ды ашу">Открыть Instagram</span>
-          </a>
+            <span data-i18n data-ru="Анонсы, результаты и фотографии турниров публикуются в официальных каналах Ассоциации." data-kz="Турнирлердің хабарландырулары, нәтижелері мен суреттері Қауымдастықтың ресми арналарында жарияланады.">Анонсы, результаты и фотографии турниров публикуются в официальных каналах Ассоциации.</span></p>
         </div>
       </div>
     </section>
@@ -486,18 +513,39 @@
           </p>
         </div>
 
-        <div class="contact-grid">
-          <div class="contact-list reveal">
-            <div class="req-card" style="margin-top:0;">
-              <div class="req-row"><span class="k" data-i18n data-ru="Адрес" data-kz="Мекенжай">Адрес</span><span class="v" data-i18n data-ru="Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Abyroy»)" data-kz="Қазақстан Республикасы, Астана қ., Сарыарқа ауданы, Сарыарқа даңғылы, 21 («Abyroy» СК)">Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Abyroy»)</span></div>
-              <div class="req-row"><span class="k" data-i18n data-ru="Телефон" data-kz="Телефон">Телефон</span><span class="v"><a href="tel:+77070177404">+7 707 017 7404</a></span></div>
-              <div class="req-row"><span class="k">Email</span><span class="v"><a href="mailto:rukopashnyboy.kz@gmail.com">rukopashnyboy.kz@gmail.com</a></span></div>
-              <div class="req-row"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener">@all_kazakhstan_h2h</a></span></div>
+        <div class="contact-grid reveal">
+          <div class="contact-panel">
+            <div class="contact-panel__main">
+              <span class="tag" data-i18n data-ru="Официальный контакт" data-kz="Ресми байланыс">Официальный контакт</span>
+              <h3 data-i18n data-ru="Ассоциация рукопашного боя Казахстана" data-kz="Қазақстан жекпе-жек қауымдастығы">Ассоциация рукопашного боя Казахстана</h3>
+              <p data-i18n data-ru="По вопросам соревнований, аккредитации и партнёрства можно связаться напрямую по телефону или email." data-kz="Жарыстар, аккредитация және серіктестік бойынша телефон немесе email арқылы тікелей хабарласуға болады.">По вопросам соревнований, аккредитации и партнёрства можно связаться напрямую по телефону или email.</p>
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="tel:+77070177404"><i class="ph ph-phone" aria-hidden="true"></i> <span data-i18n data-ru="Позвонить" data-kz="Қоңырау шалу">Позвонить</span></a>
+                <a class="btn btn-ghost" href="mailto:rukopashnyboy.kz@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Email</a>
+              </div>
             </div>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="tel:+77070177404"><i class="ph ph-phone" aria-hidden="true"></i> <span data-i18n data-ru="Позвонить" data-kz="Қоңырау шалу">Позвонить</span></a>
-              <a class="btn btn-ghost" href="https://www.instagram.com/all_kazakhstan_h2h" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i> Instagram</a>
-              <a class="btn btn-ghost" href="mailto:rukopashnyboy.kz@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Email</a>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <i class="ph ph-map-pin" aria-hidden="true"></i>
+                <div>
+                  <span data-i18n data-ru="Адрес" data-kz="Мекенжай">Адрес</span>
+                  <b data-i18n data-ru="Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Abyroy»)" data-kz="Қазақстан Республикасы, Астана қ., Сарыарқа ауданы, Сарыарқа даңғылы, 21 («Abyroy» СК)">Республика Казахстан, г. Астана, район Сарыарка, проспект Сарыарка, 21 (СК «Abyroy»)</b>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <i class="ph ph-phone" aria-hidden="true"></i>
+                <div>
+                  <span data-i18n data-ru="Телефон" data-kz="Телефон">Телефон</span>
+                  <b><a href="tel:+77070177404">+7 707 017 7404</a></b>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+                <div>
+                  <span>Email</span>
+                  <b><a href="mailto:rukopashnyboy.kz@gmail.com">rukopashnyboy.kz@gmail.com</a></b>
+                </div>
+              </div>
             </div>
           </div>
         </div>

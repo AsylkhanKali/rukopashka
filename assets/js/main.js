@@ -58,7 +58,7 @@
     for (var i = 0; i < sliders.length; i++) {
       (function (slider) {
         var track = slider.querySelector(".photo-slider__track");
-        var imgs = slider.querySelectorAll("img");
+        var imgs = track ? track.querySelectorAll(".news-photo > img") : [];
         var prev = slider.querySelector(".photo-slider__btn--prev");
         var next = slider.querySelector(".photo-slider__btn--next");
         var dotsWrap = slider.querySelector(".photo-slider__dots");
