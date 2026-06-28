@@ -5,42 +5,95 @@
   "use strict";
 
   /* ---------------------------------------- 1. Региональные федерации */
-  // region: краткое название (RU/KZ); fed: полное юр. наименование
+  // region: краткое название (RU/KZ); city: точка на карте; fed: полное юр. наименование
   var REGIONS = [
-    { ru: "Карагандинская область", kz: "Қарағанды облысы", fed: "«Федерация рукопашного боя Карагандинской области»" },
-    { ru: "Алматинская область", kz: "Алматы облысы", fed: "«Федерация рукопашного боя и восточных единоборств Алматинской области»" },
-    { ru: "Костанайская область", kz: "Қостанай облысы", fed: "«Федерация рукопашного боя Костанайской области»" },
-    { ru: "Атырауская область", kz: "Атырау облысы", fed: "«Атырауская областная федерация Iskustvo Rukopashny boi»" },
-    { ru: "Акмолинская область", kz: "Ақмола облысы", fed: "«Федерация рукопашного боя Акмолинской области»" },
-    { ru: "Актюбинская область", kz: "Ақтөбе облысы", fed: "«Актюбинская областная федерация рукопашного боя и смешанных единоборств»" },
-    { ru: "Мангистауская область", kz: "Маңғыстау облысы", fed: "«Федерация полноконтактного рукопашного боя Мангистауской области»" },
-    { ru: "г. Алматы", kz: "Алматы қ.", fed: "«Федерация рукопашного боя г. Алматы»" },
-    { ru: "Восточно-Казахстанская область", kz: "Шығыс Қазақстан облысы", fed: "«Восточно-Казахстанская областная федерация рукопашного боя»" },
-    { ru: "Западно-Казахстанская область", kz: "Батыс Қазақстан облысы", fed: "«Федерация рукопашного боя Западно-Казахстанской области»" },
-    { ru: "Кызылординская область", kz: "Қызылорда облысы", fed: "«Федерация рукопашного боя Кызылординской области»" },
-    { ru: "Павлодарская область", kz: "Павлодар облысы", fed: "«Федерация рукопашного боя Павлодарской области «Тигр»»" },
-    { ru: "Республиканская", kz: "Республикалық", fed: "«Казахстанская федерация полноконтактного рукопашного боя»" },
-    { ru: "Северо-Казахстанская область", kz: "Солтүстік Қазақстан облысы", fed: "«Северо-Казахстанская областная федерация рукопашного боя»" },
-    { ru: "г. Шымкент", kz: "Шымкент қ.", fed: "«Федерация рукопашного боя г. Шымкент»" }
+    { ru: "Карагандинская область", kz: "Қарағанды облысы", cityRu: "Караганда", cityKz: "Қарағанды", x: 57, y: 52, fed: "«Федерация рукопашного боя Карагандинской области»" },
+    { ru: "Алматинская область", kz: "Алматы облысы", cityRu: "Конаев", cityKz: "Қонаев", x: 67, y: 72, fed: "«Федерация рукопашного боя и восточных единоборств Алматинской области»" },
+    { ru: "Костанайская область", kz: "Қостанай облысы", cityRu: "Костанай", cityKz: "Қостанай", x: 41, y: 30, fed: "«Федерация рукопашного боя Костанайской области»" },
+    { ru: "Атырауская область", kz: "Атырау облысы", cityRu: "Атырау", cityKz: "Атырау", x: 18, y: 58, fed: "«Атырауская областная федерация Iskustvo Rukopashny boi»" },
+    { ru: "Акмолинская область", kz: "Ақмола облысы", cityRu: "Кокшетау", cityKz: "Көкшетау", x: 49, y: 27, fed: "«Федерация рукопашного боя Акмолинской области»" },
+    { ru: "Актюбинская область", kz: "Ақтөбе облысы", cityRu: "Актобе", cityKz: "Ақтөбе", x: 30, y: 45, fed: "«Актюбинская областная федерация рукопашного боя и смешанных единоборств»" },
+    { ru: "Мангистауская область", kz: "Маңғыстау облысы", cityRu: "Актау", cityKz: "Ақтау", x: 13, y: 74, fed: "«Федерация полноконтактного рукопашного боя Мангистауской области»" },
+    { ru: "г. Алматы", kz: "Алматы қ.", cityRu: "Алматы", cityKz: "Алматы", x: 68, y: 79, fed: "«Федерация рукопашного боя г. Алматы»" },
+    { ru: "Восточно-Казахстанская область", kz: "Шығыс Қазақстан облысы", cityRu: "Оскемен", cityKz: "Өскемен", x: 82, y: 46, fed: "«Восточно-Казахстанская областная федерация рукопашного боя»" },
+    { ru: "Западно-Казахстанская область", kz: "Батыс Қазақстан облысы", cityRu: "Уральск", cityKz: "Орал", x: 14, y: 40, fed: "«Федерация рукопашного боя Западно-Казахстанской области»" },
+    { ru: "Кызылординская область", kz: "Қызылорда облысы", cityRu: "Кызылорда", cityKz: "Қызылорда", x: 44, y: 70, fed: "«Федерация рукопашного боя Кызылординской области»" },
+    { ru: "Павлодарская область", kz: "Павлодар облысы", cityRu: "Павлодар", cityKz: "Павлодар", x: 67, y: 32, fed: "«Федерация рукопашного боя Павлодарской области «Тигр»»" },
+    { ru: "Республиканская", kz: "Республикалық", cityRu: "Астана", cityKz: "Астана", x: 54, y: 39, fed: "«Казахстанская федерация полноконтактного рукопашного боя»" },
+    { ru: "Северо-Казахстанская область", kz: "Солтүстік Қазақстан облысы", cityRu: "Петропавловск", cityKz: "Петропавл", x: 49, y: 18, fed: "«Северо-Казахстанская областная федерация рукопашного боя»" },
+    { ru: "г. Шымкент", kz: "Шымкент қ.", cityRu: "Шымкент", cityKz: "Шымкент", x: 52, y: 83, fed: "«Федерация рукопашного боя г. Шымкент»" }
   ];
 
   function buildRegions() {
-    var grid = document.getElementById("regionsGrid");
-    if (!grid) return;
-    var html = "";
+    var track = document.getElementById("regionsTrack");
+    var markers = document.getElementById("regionsMapMarkers");
+    if (!track && !markers) return;
+    var cards = "";
+    var dots = "";
     for (var i = 0; i < REGIONS.length; i++) {
       var r = REGIONS[i];
       var delay = (i % 3) + 1;
-      html +=
-        '<article class="region-card reveal" data-d="' + delay + '">' +
+      cards +=
+        '<article class="region-card" data-d="' + delay + '">' +
+          '<div class="city" data-i18n data-ru="' + r.cityRu + '" data-kz="' + r.cityKz + '">' + r.cityRu + "</div>" +
           '<div class="reg" data-i18n data-ru="' + r.ru + '" data-kz="' + r.kz + '">' + r.ru + "</div>" +
           '<div class="fed">' + r.fed + "</div>" +
         "</article>";
+      dots +=
+        '<button class="map-point" type="button" style="--x:' + r.x + '%; --y:' + r.y + '%;" aria-label="' + r.cityRu + '">' +
+          '<span data-i18n data-ru="' + r.cityRu + '" data-kz="' + r.cityKz + '">' + r.cityRu + "</span>" +
+        "</button>";
     }
-    grid.innerHTML = html;
+    if (track) {
+      track.innerHTML =
+        '<div class="regions-track__group">' + cards + "</div>" +
+        '<div class="regions-track__group" aria-hidden="true">' + cards + "</div>";
+    }
+    if (markers) markers.innerHTML = dots;
   }
 
-  /* ---------------------------------------- 2. Переключение языков */
+  /* ---------------------------------------- 2. Слайдеры фотографий */
+  function initPhotoSliders() {
+    var sliders = document.querySelectorAll("[data-slider]");
+    for (var i = 0; i < sliders.length; i++) {
+      (function (slider) {
+        var track = slider.querySelector(".photo-slider__track");
+        var imgs = slider.querySelectorAll("img");
+        var prev = slider.querySelector(".photo-slider__btn--prev");
+        var next = slider.querySelector(".photo-slider__btn--next");
+        var dotsWrap = slider.querySelector(".photo-slider__dots");
+        if (!track || imgs.length < 2) return;
+        var index = 0;
+        var dots = [];
+
+        function setActive(nextIndex) {
+          index = (nextIndex + imgs.length) % imgs.length;
+          track.style.transform = "translateX(-" + (index * 100) + "%)";
+          for (var d = 0; d < dots.length; d++) {
+            dots[d].classList.toggle("is-active", d === index);
+          }
+        }
+
+        if (dotsWrap) {
+          for (var k = 0; k < imgs.length; k++) {
+            var dot = document.createElement("button");
+            dot.type = "button";
+            dot.setAttribute("aria-label", "Показать фото " + (k + 1));
+            dot.addEventListener("click", (function (n) {
+              return function () { setActive(n); };
+            })(k));
+            dotsWrap.appendChild(dot);
+            dots.push(dot);
+          }
+        }
+        if (prev) prev.addEventListener("click", function () { setActive(index - 1); });
+        if (next) next.addEventListener("click", function () { setActive(index + 1); });
+        setActive(0);
+      })(sliders[i]);
+    }
+  }
+
+  /* ---------------------------------------- 3. Переключение языков */
   var TITLES = {
     ru: "Всеказахстанская ассоциация рукопашного боя",
     kz: "Бүкілқазақстандық жекпе-жек сайыс қауымдастығы"
@@ -76,7 +129,7 @@
     }
   }
 
-  /* ---------------------------------------- 3. Sticky-топбар */
+  /* ---------------------------------------- 4. Sticky-топбар */
   function initTopbar() {
     var bar = document.getElementById("topbar");
     if (!bar) return;
@@ -87,7 +140,7 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  /* ---------------------------------------- 4. Мобильное меню */
+  /* ---------------------------------------- 5. Мобильное меню */
   function initBurger() {
     var burger = document.getElementById("burger");
     var nav = document.getElementById("navLinks");
@@ -100,7 +153,7 @@
     nav.addEventListener("click", function (e) { if (e.target.tagName === "A") close(); });
   }
 
-  /* ---------------------------------------- 5. Scroll-reveal */
+  /* ---------------------------------------- 6. Scroll-reveal */
   function initReveal() {
     var els = document.querySelectorAll(".reveal");
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -116,7 +169,7 @@
     for (var k = 0; k < els.length; k++) io.observe(els[k]);
   }
 
-  /* ---------------------------------------- 6. Счётчик статистики */
+  /* ---------------------------------------- 7. Счётчик статистики */
   function initCounters() {
     var els = document.querySelectorAll("[data-count]");
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -141,7 +194,7 @@
     for (var i = 0; i < els.length; i++) io.observe(els[i]);
   }
 
-  /* ---------------------------------------- 7. Активная ссылка в навигации */
+  /* ---------------------------------------- 8. Активная ссылка в навигации */
   function initActiveNav() {
     var links = document.querySelectorAll(".nav-links a[href^='#']");
     if (!links.length || !("IntersectionObserver" in window)) return;
@@ -164,6 +217,7 @@
   /* ---------------------------------------- init */
   document.addEventListener("DOMContentLoaded", function () {
     buildRegions();   // строим карточки до применения языка
+    initPhotoSliders();
     initLang();
     initTopbar();
     initBurger();

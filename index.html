@@ -208,8 +208,35 @@
           </p>
         </div>
 
-        <div class="regions-grid" id="regionsGrid">
-          <!-- 15 региональных федераций -->
+        <div class="regions-map-layout reveal">
+          <div class="kaz-map" aria-label="Карта присутствия региональных федераций">
+            <div class="kaz-map__top">
+              <span data-i18n data-ru="Карта присутствия" data-kz="Қатысу картасы">Карта присутствия</span>
+              <b>15</b>
+            </div>
+            <div class="kaz-map__canvas">
+              <svg class="kaz-map__shape" viewBox="0 0 900 480" role="img" aria-label="Схематичная карта Казахстана">
+                <path d="M102 213 L170 160 L263 167 L321 121 L404 133 L470 91 L564 112 L624 74 L714 116 L779 183 L851 205 L801 272 L825 335 L720 369 L629 355 L580 406 L487 371 L395 395 L322 345 L240 367 L174 318 L91 302 L54 253 Z" />
+                <path d="M170 160 L240 367 M321 121 L395 395 M470 91 L487 371 M624 74 L580 406 M714 116 L629 355" />
+              </svg>
+              <div class="map-markers" id="regionsMapMarkers"></div>
+            </div>
+          </div>
+          <div class="regions-summary">
+            <span class="tag" data-i18n data-ru="География" data-kz="География">География</span>
+            <h3 data-i18n data-ru="Федерации в ключевых регионах страны" data-kz="Елдің негізгі аймақтарындағы федерациялар">Федерации в ключевых регионах страны</h3>
+            <p data-i18n
+               data-ru="Маркеры показывают города и областные центры, где представлены региональные федерации Ассоциации."
+               data-kz="Маркерлер Қауымдастықтың аймақтық федерациялары ұсынылған қалалар мен облыс орталықтарын көрсетеді.">
+               Маркеры показывают города и областные центры, где представлены региональные федерации Ассоциации.
+            </p>
+          </div>
+        </div>
+
+        <div class="regions-carousel reveal" aria-label="Региональные федерации">
+          <div class="regions-track" id="regionsTrack">
+            <!-- 15 региональных федераций -->
+          </div>
         </div>
       </div>
     </section>
@@ -278,10 +305,15 @@
 
           <div class="news-list">
             <article class="news-card reveal">
-              <div class="news-media news-media--triple">
-                <img src="images/punkt/punkt1-1.jpeg" alt="Учебно-тренировочный сбор в Щучинске" loading="lazy" />
-                <img src="images/punkt/punkt1-2.jpeg" alt="Подготовка спортсменов на учебно-тренировочном сборе" loading="lazy" />
-                <img src="images/punkt/punkt1-3.jpeg" alt="Участники учебно-тренировочного сбора" loading="lazy" />
+              <div class="news-media photo-slider" data-slider>
+                <div class="photo-slider__track">
+                  <img src="images/punkt/punkt1-1.jpeg" alt="Учебно-тренировочный сбор в Щучинске" loading="lazy" />
+                  <img src="images/punkt/punkt1-2.jpeg" alt="Подготовка спортсменов на учебно-тренировочном сборе" loading="lazy" />
+                  <img src="images/punkt/punkt1-3.jpeg" alt="Участники учебно-тренировочного сбора" loading="lazy" />
+                </div>
+                <button class="photo-slider__btn photo-slider__btn--prev" type="button" aria-label="Предыдущее фото"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+                <button class="photo-slider__btn photo-slider__btn--next" type="button" aria-label="Следующее фото"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+                <div class="photo-slider__dots" aria-hidden="true"></div>
               </div>
               <div class="news-body">
                 <span class="tag">УТС</span>
@@ -340,9 +372,14 @@
             </article>
 
             <article class="news-card reveal" data-d="2">
-              <div class="news-media news-media--double">
-                <img src="images/punkt/punkt7-1.png" alt="Открытый республиканский турнир по рукопашному бою в Алматы" loading="lazy" />
-                <img src="images/punkt/punkt7-2.jpg" alt="Участники открытого республиканского турнира" loading="lazy" />
+              <div class="news-media photo-slider" data-slider>
+                <div class="photo-slider__track">
+                  <img src="images/punkt/punkt7-1.png" alt="Открытый республиканский турнир по рукопашному бою в Алматы" loading="lazy" />
+                  <img src="images/punkt/punkt7-2.jpg" alt="Участники открытого республиканского турнира" loading="lazy" />
+                </div>
+                <button class="photo-slider__btn photo-slider__btn--prev" type="button" aria-label="Предыдущее фото"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+                <button class="photo-slider__btn photo-slider__btn--next" type="button" aria-label="Следующее фото"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+                <div class="photo-slider__dots" aria-hidden="true"></div>
               </div>
               <div class="news-body">
                 <span class="tag">Турнир</span>
