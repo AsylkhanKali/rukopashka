@@ -759,10 +759,13 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
   .event-col { grid-template-rows: auto; }
   .news-list { grid-template-columns: 1fr; }
   .region-card { flex-basis: 286px; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
+  .stat { padding: 20px 8px; }
+  .stat b { font-size: clamp(1.75rem, 10vw, 2.25rem); }
+  .stat span { margin-top: 8px; font-size: .72rem; line-height: 1.25; }
   .event--feature .event-feature-text { display: none; }
   .kaz-map { min-height: 300px; }
   .kaz-map__top { padding: 16px 18px 0; }
