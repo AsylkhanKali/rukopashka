@@ -245,6 +245,8 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
 .avatar.sm { width: 64px; height: 64px; font-size: 1.25rem; }
 .avatar .ph { font-size: 1.45rem; }
 .leader-photo { object-fit: cover; object-position: center; }
+.leader-photo--anton { object-position: center 18%; }
+.leader-photo--rinat { object-position: center 22%; }
 .leader-feature .role { color: var(--gold-soft); text-transform: uppercase; letter-spacing: .14em; font-size: .82rem; font-family: var(--font-display); }
 .leader-feature h3 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin: 8px 0 12px; }
 .leader-feature p { color: var(--muted); max-width: 62ch; font-size: .96rem; }
@@ -337,17 +339,6 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
   mask: inherit;
   -webkit-mask: inherit;
 }
-.kaz-map__credit {
-  position: absolute;
-  left: 24px;
-  bottom: 18px;
-  z-index: 2;
-  color: var(--muted-2);
-  font-size: .66rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.kaz-map__credit:hover { color: var(--gold-soft); }
 .map-markers { position: absolute; inset: 0; }
 .map-point {
   position: absolute;
@@ -776,7 +767,6 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 600; line-
   .kaz-map { min-height: 300px; }
   .kaz-map__top { padding: 16px 18px 0; }
   .kaz-map__canvas { inset: 42px 8px 20px; }
-  .kaz-map__credit { left: 18px; bottom: 12px; }
   .map-point span { display: none; }
   .regions-summary { padding: 22px; }
   .region-card { flex-basis: 260px; min-height: 164px; }
